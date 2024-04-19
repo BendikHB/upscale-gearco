@@ -22,13 +22,18 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className="bg-black text-white">
+      <body className="bg-white text-white">
         <header className="flex justify-center pt-20 mx-auto fixed inset-x-0 top-0">
           <Link href={"/"} className="">
             <Image src={Logo} alt="Upscale Logo" width={250} height={65} />
           </Link>
         </header>
         <main>{children}</main>
+        <footer>
+          <div className="max-w-5xl mx-auto text-center py-4 absolute inset-x-0 bottom-0">
+            ©copyright paper route inc, est. 23
+          </div>
+        </footer>
       </body>
     </html>
   );
