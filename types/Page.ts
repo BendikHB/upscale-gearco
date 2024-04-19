@@ -5,6 +5,9 @@ export type Page = {
   _createdAt: Date;
   title: string;
   slug: string;
+  intro: string;
   formTitle: string;
   content: PortableTextBlock[];
+  videoEmbed: string;
+  videoEmbedTitle: string;
 };
