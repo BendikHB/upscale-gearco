@@ -10,7 +10,7 @@ export default function Form() {
         type="text"
         name="name"
         placeholder="yourname@upscalegearco.com"
-        className="min-w-full p-2 text-center"
+        className="min-w-full p-2 text-center text-black"
       />
       <button
         type="submit"
