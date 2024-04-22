@@ -40,7 +40,7 @@ const PasswordProtect = () => {
         <button
           type="submit"
           disabled={loading}
-          className="px-6 py-2 bg-white text-black border-2 border-white"
+          className="px-6 py-2 bg-white text-black border-2 border-white transition duration-200 hover:bg-dark hover:text-white"
         >
           enter
         </button>
