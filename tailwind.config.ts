@@ -11,6 +11,12 @@ const config: Config = {
       Prototype: ["Prototype", "sans-serif"],
       NotoSans: ["NotoSans", "sans-serif"],
     },
+    colors: {
+      "dark": "#121212",
+      "white": "#ffffff",
+      "black": "#00040d",
+      transparent: "transparent",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

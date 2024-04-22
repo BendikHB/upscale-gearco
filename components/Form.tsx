@@ -51,13 +51,13 @@ export default function Form({ title }: { title?: string }) {
           className="flex flex-col w-72 mt-4 text-black mx-auto"
         >
           <input
-            id="waitlist-name"
-            type="text"
+            id="aitlist-email"
+            type="name"
             name="name"
             autoComplete="name"
-            placeholder="name"
             maxLength={50}
-            className="min-w-full p-2 text-center mb-2"
+            placeholder="name"
+            className="min-w-full p-2 text-center text-white bg-transparent border-2 border-white placeholder:text-white focus:bg-dark focus:bg-opacity-75"
           />
           <input
             id="aitlist-email"
@@ -66,15 +66,15 @@ export default function Form({ title }: { title?: string }) {
             required
             autoComplete="email"
             maxLength={80}
-            placeholder="your@mail.com"
-            className="min-w-full p-2 text-center"
+            placeholder="email&#42;"
+            className="min-w-full mt-2 p-2 text-center text-white bg-transparent border-2 border-white placeholder:text-white focus:bg-dark focus:bg-opacity-75"
           />
           <button
             type="submit"
             disabled={isLoading}
-            className="p-2 bg-white mt-6 uppercase font-bold"
+            className="p-3 bg-white mt-4 font-bold font-Prototype transition duration-200 border-2 border-transparent hover:border-white hover:bg-dark hover:text-white"
           >
-            {isLoading ? "loading..." : "join waitlist"}
+            {isLoading ? "loading..." : "be in the know"}
           </button>
         </form>
       )}
