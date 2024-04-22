@@ -7,7 +7,6 @@ export default function Form({ title }: { title?: string }) {
 
   async function handleSubmit(event) {
     setIsLoading(true);
-    setShow(false);
     event.preventDefault();
     const formData = new FormData(event.target);
     try {
@@ -23,8 +22,7 @@ export default function Form({ title }: { title?: string }) {
       const responseData = await response.json();
       console.log(responseData["message"]);
       setIsLoading(false);
-
-      alert("Message successfully sent");
+      setShow(false);
     } catch (err) {
       console.error(err);
       setIsLoading(false);
@@ -34,13 +32,23 @@ export default function Form({ title }: { title?: string }) {
 
   return (
     <>
-      <a className="text-center" onClick={() => setShow(true)}>
-        {title ? title : "Show me"}
-      </a>
+      <div className="mt-8 font-Prototype">
+        {!show && (
+          <a
+            className="text-center text-xl border-b-2 border-transparent cursor-pointer transition duration-200 hover:border-white"
+            onClick={() => setShow(true)}
+          >
+            {title ? title : "Show me"}
+          </a>
+        )}
+        {show && (
+          <a className="text-center text-xl">{title ? title : "Show me"}</a>
+        )}
+      </div>
       {show && (
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col w-72 mt-4 text-black"
+          className="flex flex-col w-72 mt-4 text-black mx-auto"
         >
           <input
             id="waitlist-name"
@@ -66,7 +74,7 @@ export default function Form({ title }: { title?: string }) {
             disabled={isLoading}
             className="p-2 bg-white mt-6 uppercase font-bold"
           >
-            {isLoading ? "Loading..." : "join waitlist"}
+            {isLoading ? "loading..." : "join waitlist"}
           </button>
         </form>
       )}
