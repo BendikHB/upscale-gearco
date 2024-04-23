@@ -27,7 +27,7 @@ const PasswordProtect = () => {
     <div>
       <form
         onSubmit={handleSubmit}
-        className="font-bold font-Prototype text-xl xl:text-2xl w-4/5 mx-auto"
+        className="font-bold font-Prototype text-xl xl:text-2xl w-full mx-auto"
       >
         <input
           type="password"
