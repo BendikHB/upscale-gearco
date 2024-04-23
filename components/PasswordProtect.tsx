@@ -35,7 +35,7 @@ const PasswordProtect = () => {
           placeholder="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="appearance-none text-center p-2 bg-transparent border-b-2 border-white placeholder:text-white w-3/4"
+          className="appearance-none text-center p-2 bg-transparent border-b-2 rounded-none border-white placeholder:text-white w-3/4"
         />
         <button
           type="submit"
