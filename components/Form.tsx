@@ -57,7 +57,7 @@ export default function Form({ title }: { title?: string }) {
             autoComplete="name"
             maxLength={50}
             placeholder="name"
-            className="min-w-full p-2 text-center text-white bg-transparent border-2 border-white placeholder:text-white focus:bg-dark focus:bg-opacity-75"
+            className="min-w-full p-2 text-center text-white bg-transparent border-2 rounded-none border-white placeholder:text-white focus:bg-dark focus:bg-opacity-75"
           />
           <input
             id="aitlist-email"
@@ -67,7 +67,7 @@ export default function Form({ title }: { title?: string }) {
             autoComplete="email"
             maxLength={80}
             placeholder="email&#42;"
-            className="min-w-full mt-2 p-2 text-center text-white bg-transparent border-2 border-white placeholder:text-white focus:bg-dark focus:bg-opacity-75"
+            className="min-w-full mt-2 p-2 text-center text-white bg-transparent border-2 rounded-none border-white placeholder:text-white focus:bg-dark focus:bg-opacity-75"
           />
           <button
             type="submit"
