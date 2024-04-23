@@ -16,7 +16,7 @@ export default async function Home() {
 
   if (!isLoggedIn) {
     return (
-      <div className="max-w-5xl mx-auto py-20 flex flex-col items-center justify-center h-screen">
+      <div className="max-w-5xl mx-auto py-20 flex flex-col items-center justify-center h-dvh">
         <BackgroundVideoEmbed
           embed={homePage.videoEmbed}
           title={homePage.videoEmbedTitle}
