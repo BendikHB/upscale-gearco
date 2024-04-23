@@ -21,18 +21,21 @@ export default async function Home() {
           embed={homePage.videoEmbed}
           title={homePage.videoEmbedTitle}
         />
-        <h1 className="text-5xl font-bold text-center">{homePage.title}</h1>
+        <h1 className="text-3xl sm:text-5xl font-bold text-center lg:max-w-md 2xl:max-w-xl">
+          {homePage.title}
+        </h1>
         <div className="text-xl text-center font-Prototype">
           {homePage.intro}
         </div>
-        <Image
-          src={GearOutline}
-          alt="upscale gear outline"
-          width={315}
-          height={51}
-          className="mt-4 mb-16"
-        />
-
+        <div className="w-2/4 flex justify-center">
+          <Image
+            src={GearOutline}
+            alt="upscale gear outline"
+            width={315}
+            height={51}
+            className="mt-4 mb-16"
+          />
+        </div>
         <div className="w-fit text-center">
           <PasswordProtect />
           <Form title={homePage.formTitle} />
