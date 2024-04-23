@@ -12,7 +12,7 @@ export default function BackgroundVideoEmbed({
   const src = `${embed}??h=1488b32ce1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&mute=1&lopp=1&background=1`;
 
   return (
-    <div className="overflow-hidden h-screen w-screen absolute top-0 inset-x-0">
+    <div className="overflow-hidden h-dvh w-screen absolute top-0 inset-x-0">
       <iframe
         src={src}
         width="200%"
