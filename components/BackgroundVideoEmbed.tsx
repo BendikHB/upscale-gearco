@@ -14,12 +14,12 @@ export default function BackgroundVideoEmbed({
   return (
     <iframe
       src={src}
-      width="100%"
-      height="100%"
+      width="1000%"
+      height="1000%"
       frameBorder="0"
       allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
       title={title}
-      className="absolute -z-10"
+      className="absolute -z-10 h-dvh"
     ></iframe>
   );
 }
