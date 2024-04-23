@@ -30,8 +30,10 @@ export default async function RootLayout({
           </Link> */}
         </header>
         <main>{children}</main>
-        <footer className="flex justify-between max-w-2xl mx-auto text-center py-4 absolute inset-x-0 bottom-0">
-          <div>©copyright paper route inc, est. 23</div>
+        <footer className="flex justify-between md:max-w-lg lg:max-w-md 2xl:max-w-2xl mx-auto text-center py-4 px-4 absolute inset-x-0 bottom-0">
+          <div className="text-sm sm:text-base">
+            ©copyright paper route inc, est. 23
+          </div>
           <Link
             href={"https://www.instagram.com/upscalegearco"}
             target="_blank"
