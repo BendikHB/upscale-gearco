@@ -3,10 +3,6 @@ import Form from "@/components/Form";
 import PasswordProtect from "@/components/PasswordProtect";
 import { getPage } from "@/sanity/sanity-utils";
 import { cookies } from "next/headers";
-import Image from "next/image";
-import GearOutline from "../../public/logo/UP-gear-outline-white-v2.png";
-import IGwhite from "@/public/icons/IG-white";
-import Link from "next/link";
 
 export default async function Home() {
   const cookieStore = cookies();
@@ -21,22 +17,13 @@ export default async function Home() {
           embed={homePage.videoEmbed}
           title={homePage.videoEmbedTitle}
         />
-        <h1 className="text-3xl sm:text-5xl font-bold text-center lg:max-w-md 2xl:max-w-xl">
-          {homePage.title}
-        </h1>
-        <div className="text-xl text-center font-Prototype">
-          {homePage.intro}
-        </div>
-        <div className="w-2/4 flex justify-center">
-          <Image
-            src={GearOutline}
-            alt="upscale gear outline"
-            width={315}
-            height={51}
-            className="mt-4 mb-16"
-          />
-        </div>
-        <div className="w-fit text-center">
+        {homePage.title && <h1 className="hidden">{homePage.title}</h1>}
+        {homePage.intro && (
+          <div className="text-xl text-center font-Prototype">
+            {homePage.intro}
+          </div>
+        )}
+        <div className="w-fit text-center z-10">
           <PasswordProtect />
           <Form title={homePage.formTitle} />
         </div>
