@@ -39,7 +39,7 @@ export default async function Home() {
       <h1 className="text-4xl font-bold text-center">Welcome</h1>
       <a
         href="https://shop.upscalegear.store"
-        className=" z-10 mt-4 px-2 py-2 bg-white text-black text-center font-bold font-Prototype text-xl xl:text-2xl border-2 border-white transition duration-200 hover:bg-dark hover:text-white w-1/4"
+        className=" z-10 mt-4 px-2 py-2 text-white text-center font-bold font-Prototype text-xl xl:text-2xl border-2 border-white transition duration-200 hover:bg-dark hover:text-white w-1/4"
       >
         To the shop
       </a>
