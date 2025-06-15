@@ -10,26 +10,26 @@ export default async function Home() {
   const isLoggedIn = !!loginCookies?.value;
   const homePage = await getPage("/");
 
-  if (!isLoggedIn) {
-    return (
-      <div className="max-w-5xl mx-auto py-20 flex flex-col items-center justify-center h-dvh">
-        <BackgroundVideoEmbed
-          embed={homePage.videoEmbed}
-          title={homePage.videoEmbedTitle}
-        />
-        {homePage.title && <h1 className="hidden">{homePage.title}</h1>}
-        {homePage.intro && (
-          <div className="text-xl text-center font-Prototype">
-            {homePage.intro}
-          </div>
-        )}
-        <div className="w-fit text-center z-10">
-          <PasswordProtect />
-          <Form title={homePage.formTitle} />
-        </div>
-      </div>
-    );
-  }
+  // if (!isLoggedIn) {
+  //   return (
+  //     <div className="max-w-5xl mx-auto py-20 flex flex-col items-center justify-center h-dvh">
+  //       <BackgroundVideoEmbed
+  //         embed={homePage.videoEmbed}
+  //         title={homePage.videoEmbedTitle}
+  //       />
+  //       {homePage.title && <h1 className="hidden">{homePage.title}</h1>}
+  //       {homePage.intro && (
+  //         <div className="text-xl text-center font-Prototype">
+  //           {homePage.intro}
+  //         </div>
+  //       )}
+  //       <div className="w-fit text-center z-10">
+  //         <PasswordProtect />
+  //         <Form title={homePage.formTitle} />
+  //       </div>
+  //     </div>
+  //   );
+  // }
   return (
     <div className="max-w-5xl mx-auto py-20 flex flex-col items-center justify-center h-screen">
       <BackgroundVideoEmbed
