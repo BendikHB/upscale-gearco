@@ -24,6 +24,10 @@ export default async function Home() {
           </div>
         )}
         <div className="w-fit text-center z-10">
+          <h1 className="text-4xl font-bold text-center">Drops closed</h1>
+          <p className="text-center mb-2">
+            Sign up to get the news for the next one.
+          </p>
           <PasswordProtect />
           <Form title={homePage.formTitle} />
         </div>
